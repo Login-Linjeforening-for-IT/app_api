@@ -1,5 +1,11 @@
 const Questions = [
     {
+        id: 0,
+        title_no: "Hvem har de mest absurde teoriene?",
+        title_en: "Who has the most absurd theories?",
+        categories: ["Party"],
+    },
+    {
         id: 1,
         title_no: "Hvem spilte tetris hver time på videregående?",
         title_en: "Who played tetris every class in high school?",
