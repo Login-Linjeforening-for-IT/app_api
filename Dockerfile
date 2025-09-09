@@ -17,4 +17,4 @@ COPY . .
 RUN npm run build
 
 # Starts the application
-CMD npm run prod
+CMD npm start
