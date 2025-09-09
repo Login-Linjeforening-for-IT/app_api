@@ -13,5 +13,8 @@ RUN npm install
 # Copies contents
 COPY . .
 
+# Builds the distributable
+RUN npm run build
+
 # Starts the application
 CMD npm run prod
