@@ -2349,4 +2349,5 @@ const Questions = [
 
 const categories = ["Gaming", "Party", "School", "Wild", "NTNU"]
 
+export { categories }
 export default Questions

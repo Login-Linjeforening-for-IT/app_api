@@ -2289,4 +2289,5 @@ const NeverHaveIEver = [
 
 const categories = ["Gaming", "Party", "School", "Wild", "NTNU"]
 
+export { categories }
 export default NeverHaveIEver

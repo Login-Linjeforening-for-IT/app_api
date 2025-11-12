@@ -1,8 +1,11 @@
-# Uses node 20 alpine image for apk package manager
-FROM node:20-alpine
+# Uses latest node alpine image for apk package manager
+FROM node:alpine
 
 # Sets the working directory
 WORKDIR /usr/src/app
+
+# Installs packages
+RUN apk add ripgrep bash
 
 # Copies package.json and package-lock.json to the Docker environment
 COPY package.json package-lock.json ./
@@ -13,8 +16,5 @@ RUN npm install
 # Copies contents
 COPY . .
 
-# Builds the distributable
-RUN npm run build
-
-# Starts the application
+# Stars the application
 CMD npm start

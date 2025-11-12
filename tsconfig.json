@@ -2,16 +2,23 @@
     "compilerOptions": {
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
-        "module": "ES6",
-        "moduleResolution": "node",
-        "outDir": "./dist",
+        "module": "esnext",
+        "moduleResolution": "bundler",
         "strict": true,
-        "target": "es2016",
+        "target": "es2022",
+        "skipLibCheck": true,
+        "resolveJsonModule": true,
+        "allowImportingTsExtensions": true,
+        "noEmit": true,
     },
     "include": [
         "**/*.ts",
         "**/*.d.ts",
         "**/*.json",
     ],
-    "exclude": ["node_modules"]
+    "exclude": [
+        "node_modules",
+        "package-lock.json",
+        "tsconfig.json"
+    ],
 }
