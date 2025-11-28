@@ -1,5 +1,6 @@
 services:
   app_api:
+    container_name: app_api
     restart: always
     build:
       context: .
