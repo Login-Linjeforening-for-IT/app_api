@@ -1,5 +1,5 @@
 services:
-  app-api:
+  app_api:
     restart: always
     build:
       context: .
