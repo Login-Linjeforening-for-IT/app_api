@@ -8,3 +8,5 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8100:8080"
+    mem_limit: 1g
+    cpus: "2.0"
